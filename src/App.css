@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+/* header*/
+.ShopHeader{
+display: flex;
+width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeaderMain{
+  padding-top: 1%;
+  color:black;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderItem1,.HeaderItem2{
+  padding-top: 1%;
+  padding-left: 5%;
+  color:black;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HeaderLogin{
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: 4%;
+  text-decoration: none;
+  color: black;
+}
+/*   login  */
+.Login{
+  margin-left: 40%;
+  margin-top: 8%;
+  display:grid;
+  width:20%
+}
+.LoginText{
+font-size: 30px;
+margin-left: 30%;
+}
+.LoginIdAll{
   display: flex;
-  flex-direction: column;
+}
+.LoginPwdAll{
+  display: flex;
+}
+.LoginId{
+ margin-top: 10%;
+ height: 60%;
+ margin-left: 7%;
+}
+.LoginPwd{
+margin-top: 10%;
+height: 60%;
+margin-left: 1%;
+}
+.LoginIdText{
+  margin-top: 12%;
+  margin-left: 15%;
+}
+.LoginPwdText{
+  margin-top: 12%;
+}
+.LoginButton{
+  display: flex;
+  border: 1px solid black;
+  margin-top: 14%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: black;
+  color:white;
+  justify-content: center; 
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.LoginJoin{
+  margin-left: 30%;
+  margin-top: 7%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*    join     */
+.JoinText{
+  margin-left: 43%;
+  margin-top:5%;
+  font-size: 1.5em;
+}
+.JoinButton{
+  margin-left: 37%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 2%;
+  width: 20%;
+  background-color: black;
+  color:white;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+  height: 30px;
+}
+.IdAll,.PwdAll ,.NameAll,.TelAll{
+  margin-left: 40%;
+  margin-top:2%;
+}
+.IdInput,.PwdInput,.NameInput,.TelInput{
+  height: 25px;
+  margin-top: 1%;
 }
