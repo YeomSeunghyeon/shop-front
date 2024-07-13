@@ -14,6 +14,12 @@ width: 100%;
   color:black;
   text-decoration: none;
 }
+.HeaderItem3{
+  padding-top: 1%;
+  padding-left: 60%;
+  color:black;
+  text-decoration: none;
+}
 .HeaderLogin{
   margin-top: 1%;
   margin-left: auto;
@@ -97,4 +103,28 @@ margin-left: 1%;
 .IdInput,.PwdInput,.NameInput,.TelInput{
   height: 25px;
   margin-top: 1%;
+}
+/*    list       */
+.ListAll{
+ padding-left: 8%;
+ padding-top: 5%;
+ display: flex;
+}
+.ListPrice{
+  border: 1px solid black;
+  padding-left: 4%;
+}
+.ListOrigin{
+  border: 1px solid black;
+  padding-left: 4%;
+}
+.ListName{
+
+  border: 1px solid black;
+}
+/*    basket     */
+.BasketText{
+  padding-left: 7%;
+  padding-top: 3%;
+  font-size: 1.5em;
 }

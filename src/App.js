@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Join from './pages/Join';
 import List from './pages/List';
+import ShopBasket from './pages/ShopBasket';
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +14,8 @@ function App() {
  <Route path='/' element={<Home/>}/>
  <Route path='/login' element={<Login/>}/>
  <Route path='/join' element={<Join/>}/>
- <Route path='/list' element={<List/>}/>
+ <Route path='/list/:id' element={<List/>}/>
+ <Route path='/shopbasket' element={<ShopBasket/>}/>
  </Routes>
   
    </div>

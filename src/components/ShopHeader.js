@@ -23,8 +23,9 @@ const ShopHeader=()=>{
      <div className="ShopHeader">
        <a href="/"> <img src={process.env.PUBLIC_URL + '/shop.png'} width = '50px' className="HeaderLogo" /></a>
         <Link to="/" className="HeaderMain">쇼핑몰</Link>
-        <Link to="/list" className="HeaderItem1">식품</Link>
+        <Link to="/list/1" className="HeaderItem1">식품</Link>
         <div className="HeaderItem2">가전</div>
+        <Link to="/shopbasket" className="HeaderItem3">장바구니</Link>
         {islogin==false?
         <Link to="/login" className="HeaderLogin">로그인</Link>:
         <div className="HeaderLogin" onClick={handleLogout}>로그아웃</div>}</div>
