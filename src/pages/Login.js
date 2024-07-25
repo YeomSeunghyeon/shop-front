@@ -17,8 +17,7 @@ const Login=()=>{
            if (response.status === 200) {
               console.log('로그인 성공');
           
-              const session = response.sessionId;
-         
+              const session = response.data.sessionId;
               sessionStorage.setItem('session', session);
              
              navigate("/");

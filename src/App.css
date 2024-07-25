@@ -27,6 +27,11 @@ width: 100%;
   text-decoration: none;
   color: black;
 }
+/* home              */
+.MainText{
+  margin-left: 35%;
+  margin-top: 10%;
+}
 /*   login  */
 .Login{
   margin-left: 40%;
@@ -106,21 +111,40 @@ margin-left: 1%;
 }
 /*    list       */
 .ListAll{
- padding-left: 8%;
- padding-top: 5%;
- display: flex;
+ margin-left: 10%;
+ margin-top: 5%;
+
+}
+.List{
+  display: flex;
+}
+.ListText{
+  font-size: 2em;
+  margin-left: 10%;
+  margin-top: 3%;
+
 }
 .ListPrice{
-  border: 1px solid black;
-  padding-left: 4%;
+ border:1px solid black;
+ width: 8%; 
+ text-align: center;
 }
 .ListOrigin{
-  border: 1px solid black;
-  padding-left: 4%;
+  border:1px solid black;
+  width: 8%;
+  text-align: center;
 }
 .ListName{
+  border:1px solid black;
+  width: 6%;
+  text-align: center;
 
-  border: 1px solid black;
+}
+.ListBasket{
+  border:1px solid black;
+  width: 10%;
+  text-align: center;
+  color:blue;
 }
 /*    basket     */
 .BasketText{
