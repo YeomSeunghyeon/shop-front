@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Join from './pages/Join';
 import List from './pages/List';
 import ShopBasket from './pages/ShopBasket';
+import ItemDetail from './pages/ItemDetail';
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
  <Route path='/join' element={<Join/>}/>
  <Route path='/list/:id' element={<List/>}/>
  <Route path='/shopbasket' element={<ShopBasket/>}/>
+ <Route path='/item/:id' element={<ItemDetail/>}/>
  </Routes>
   
    </div>

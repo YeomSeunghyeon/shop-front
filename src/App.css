@@ -219,3 +219,44 @@ margin-left: 1%;
   width: 20%;
   text-align: center; 
 }
+/* item */
+.ItemAll{
+  margin-top: 5%;
+  display: flex;
+  margin-left:15% ;
+}
+.ItemImage{
+  
+}
+.ItemContent{
+  margin-left: 10%;
+}
+.ItemName{
+ margin-top: -10%;
+ font-size: 50px;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ border-top:  1px solid rgba(0, 0, 0, 0.2);
+
+}
+.ItemPrice{
+ margin-top: 25%;
+ font-size: 35px;
+}
+.ItemOrigin{
+ font-size: 25px;
+ margin-top: 30%;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+.ItemButton{
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 40%;
+  height: 10%;
+  margin-top: 10%;
+  margin-left: 60%;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+  color:white;
+  background-color: red;
+}
