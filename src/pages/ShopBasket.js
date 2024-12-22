@@ -70,7 +70,7 @@ const ShopBasket = () => {
         }
     };
 
-    return (
+    return (    
         <div>
             <ShopHeader />
             <div className="BasketText">
@@ -80,7 +80,8 @@ const ShopBasket = () => {
                 <div className="BasketCategoryName">제품명</div>
                 <div className="BasketCategoryOrigin">원산지</div>
                 <div className="BasketCategoryPrice">가격</div>
-                <div className="BasketCategoryCount">개수</div></div>
+                <div className="BasketCategoryCount">개수</div>
+                <div className="BasketCategoryAllPrice">총액</div></div>
                     {Object.entries(menuCounts).map(([menu,count]) => (
                         <div className="BasketItemAll">
                         <div key={menu} className="BasketMenu">
@@ -88,6 +89,7 @@ const ShopBasket = () => {
                           <div className="BasketOrigin">{origin[menu]}</div>
                             <div className="BasketPrice">{price[menu]}원 </div>
                             <div className="BasketCount">{count}개</div>
+                            <div className="BasketAllPrice">{price[menu]*count}원</div>
                         </div>  </div>
                     ))}
                 </div>
