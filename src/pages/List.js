@@ -73,15 +73,15 @@ const List=()=>{
 return(
     <div>
     <ShopHeader/>
-    <div className="ListText">{category.name}</div>
+    <div className="ListText">{category.name}카테고리</div>
     <div className="ListAll">
     {data&&data.map((it)=>{
             return(
             <div className="List">
-               <img src={it.img}/>
+                 <div className="ListImage"> <img src={process.env.PUBLIC_URL + `/item${it.menu}${it.num}.jpg`} width = '100px' height='100px'className="HeaderLogo" />
+                 </div>
               <div className="ListName">{it.name}</div>
               <div className="ListPrice">{it.price}원</div>
-              <div className="ListOrigin">{it.origin}</div>
               <ShopButton className="ListBasket" text="상품담기" onClick={()=>handleBasket(it.num)}/>
           </div>
             )

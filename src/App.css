@@ -66,8 +66,8 @@ color:red;
 }
 /*   login  */
 .Login{
-  margin-left: 40%;
-  margin-top: 8%;
+  margin-left: 35%;
+  margin-top: 5%;
   display:grid;
   width:20%
 }
@@ -97,6 +97,7 @@ margin-left: 1%;
 }
 .LoginPwdText{
   margin-top: 12%;
+  margin-left: 2%;
 }
 .LoginButton{
   display: flex;
@@ -143,40 +144,38 @@ margin-left: 1%;
 }
 /*    list       */
 .ListAll{
- margin-left: 10%;
+ margin-left: 20%;
  margin-top: 5%;
-
+display: flex;
 }
 .List{
-  display: flex;
+  width: 10%;
+  height: 10%;
+  margin-right: 15%;
 }
 .ListText{
   font-size: 2em;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 3%;
 
 }
 .ListPrice{
- border:1px solid black;
- width: 8%; 
- text-align: center;
-}
-.ListOrigin{
-  border:1px solid black;
-  width: 8%;
-  text-align: center;
-}
-.ListName{
-  border:1px solid black;
-  width: 6%;
-  text-align: center;
+ width: 100%; 
+ margin-top: 20%;
+ font-weight:700;
 
 }
-.ListBasket{
-  border:1px solid black;
-  width: 10%;
+.ListName{
+  width: 100%;
+  margin-top: 10%;
   text-align: center;
+}
+.ListBasket{
+  width: 100%;
+  margin-top: 20%;
   color:blue;
+  text-align: center;
+  background-color: orange;
 }
 /*    basket     */
 .BasketText{

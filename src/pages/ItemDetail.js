@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios"
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ShopHeader from "../components/ShopHeader";
 import ShopButton from "../components/ShopButton";
 const ItemDetail=()=>{
@@ -8,9 +8,10 @@ const ItemDetail=()=>{
     const [data,setData]=useState([]);
     const user=sessionStorage.getItem("session");
     const navigate=useNavigate();
+     const location = useLocation();
     useEffect(()=>{
      fetchData();
-    },[])
+    },[location])
     const fetchData=async()=>{
         try{
            const response=await axios.get(`/user/item?num=${id}`);
@@ -50,7 +51,7 @@ return(
     <div>
         <ShopHeader/>
     <div className="ItemAll">
-      <div className="ItemImage"> <img src={process.env.PUBLIC_URL + `/item${id}.jpg`} width = '300px' height='300px'className="HeaderLogo" />
+      <div className="ItemImage"> <img src={process.env.PUBLIC_URL + `/item${data.menu}${id}.jpg`} width = '300px' height='300px'className="HeaderLogo" />
       </div>
       <div className="ItemContent">
      <div className="ItemName"> {data.name}</div>
