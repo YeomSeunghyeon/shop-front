@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ShopHeader from "../components/ShopHeader";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 const ShopBasket = () => {
@@ -10,11 +11,15 @@ const ShopBasket = () => {
     const [menuNames, setMenuNames] = useState({});
     const [price,setPrice]=useState({});
     const [origin,setOrigin]=useState({});
+    const navigate=useNavigate();
 
     useEffect(() => {
         fetchData();
     }, []);
-
+    useEffect(()=>{
+    if(!session)
+        navigate("/login")
+    },[])
     const fetchData = async () => {
         try {
             const response = await axios.get(`/user/getBasket?user=${session}`);

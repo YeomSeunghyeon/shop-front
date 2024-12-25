@@ -14,6 +14,9 @@ height:50px;
 }
 .ShopText{
   color:blue;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 1000;
 }
 .Search{
  margin-left: 5%;
@@ -39,10 +42,17 @@ height:50px;
 }
 .HeaderItem{
   padding-top: 2%;
-  padding-left: 80%;
+  padding-left: 60%;
   color:black;
   text-decoration: none;
   font-size: 14px;
+}
+.HeaderNote{
+  font-size: 14px;
+  margin-top: 2%;
+  margin-left: 16%;
+  text-decoration: none;
+  color: black;
 }
 .HeaderLogin{
   font-size: 14px;
@@ -60,9 +70,26 @@ color:red;
   margin-left: 50%;
 }
 /* home              */
+.MainBox{
+  margin-top: 3%;
+}
+.MainNoteText{
+  margin-left: 18%;
+  color:white;
+  text-decoration: none;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 5em;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: orange;
+}
 .MainText{
   margin-left: 35%;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 /*   login  */
 .Login{
@@ -288,4 +315,115 @@ display: flex;
   display: flex;
   color:white;
   background-color: red;
+}
+/* notelist */
+.NoteListAll{
+ margin-left: 15%;
+ margin-top: 3%;
+}
+.NoteListText{
+font-size: 20px;
+font-weight: 600;
+}
+.NoteCategoryAll{
+  margin-top: 2%;
+  display: flex;
+  border: 1px solid black;
+  width: 70%;
+  height: 3em;
+}
+.NoteCategoryNumber{
+  border-right: 1px solid black;
+  width: 5%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.389);
+}
+.NoteCategoryTitle{
+  border-right: 1px solid black;
+  width: 80%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.389);
+}
+.NoteCategoryName{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 15%;
+  background-color: rgba(128, 128, 128, 0.389);
+}
+.NoteListKey{
+display: flex;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+width: 70%;
+height: 3em;
+}
+.NoteListNumber{
+  border-right: 1px solid black;
+  width: 5%;
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.688);
+  color:white;
+  display: flex;
+}
+.NoteListTitle{
+  border-right: 1px solid black;
+  width: 80%;
+  display: flex;
+  align-items: center; 
+  text-indent: 10px;
+  color: black;
+  text-decoration: none;
+}
+.NoteListName{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 15%;
+}
+/* note */
+.NoteAll{
+ border: 1px solid black;
+ width: 40%;
+ margin-left: 25%;
+ margin-top: 3%;
+ height: 30em;
+}
+.NoteTitle{
+ border-bottom: 1px solid black;
+ height: 4em;
+ display: flex;
+ align-items: center;
+ justify-content:center ;
+ font-size: 20px;
+}
+.NoteDN{
+  display: flex;
+  border-bottom: 1px solid black;
+  height: 2.5em;
+}
+.NoteDate{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-right: 1px solid black;
+ width: 50%;
+}
+.NoteName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.NoteContent{
+ margin-top: 4%;
+ margin-left: 4%;
+ margin-right: 4%;
 }

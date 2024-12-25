@@ -86,12 +86,13 @@ const ShopHeader=()=>{
      <div className="Header"> 
 
      <div className="ShopHeader">
+      <Link to="/note/list" className="HeaderNote">공지사항</Link>
         <Link to="/shopbasket" className="HeaderItem">장바구니</Link>
         {islogin==false?
         <Link to="/login" className="HeaderLogin">로그인</Link>:
         <div className="HeaderLogin" onClick={handleLogout}>로그아웃</div>}</div>
       <div className="MainHeader">  <a href="/"> <img src={process.env.PUBLIC_URL + '/shop.png'} width = '50px' height='50px'className="HeaderLogo" /></a>
-        <h2 className="ShopText">쇼핑몰</h2>
+        <Link to="/" className="ShopText">쇼핑몰</Link>
         <FaBars size={24} color="#333"  className="FaBars"/>
      <div 
       className="HeaderCategory"
