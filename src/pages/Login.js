@@ -23,12 +23,7 @@ const Login=()=>{
              navigate("/");
            }
          } catch (error) {
-           console.log(error)
-           if(error.response.status===500){
-           alert(error.response.data.message);}
-           else if (error.response.status === 401) {
-             alert(error.response.data.message)
-            } } }
+           alert("아이디나 비밀번호가 잘못되었습니다") } }
         
 return(
     <div>

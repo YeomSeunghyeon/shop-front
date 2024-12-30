@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ShopHeader from "../components/ShopHeader";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import ShopButton from "../components/ShopButton";
 
 
 const ShopBasket = () => {
@@ -10,7 +11,8 @@ const ShopBasket = () => {
     const [menuCounts, setMenuCounts] = useState({});
     const [menuNames, setMenuNames] = useState({});
     const [price,setPrice]=useState({});
-    const [origin,setOrigin]=useState({});
+    const [id,setId]=useState({});
+    const[menuNum,setMenu]=useState({});
     const navigate=useNavigate();
 
     useEffect(() => {
@@ -61,10 +63,14 @@ const ShopBasket = () => {
                     ...prevState,
                     [num]:response.data[0].price
                 })); //가격저장
-                setOrigin(prevState=>({
+                setId(prevState=>({
                     ...prevState,
-                    [num]:response.data[0].origin
-                })) //원산지 저장
+                    [num]:response.data[0].num
+                })) //아이디
+                setMenu(prevState=>({
+                    ...prevState,
+                    [num]:response.data[0].menu
+                }))//메뉴뉴
             }
         } catch (error) {
             if (error.response.status === 500) {
@@ -81,20 +87,16 @@ const ShopBasket = () => {
             <div className="BasketText">
                 {session}님의 장바구니  
                 <div className="BasketAll">
-                <div className="BasketCategoryAll">
-                <div className="BasketCategoryName">제품명</div>
-                <div className="BasketCategoryOrigin">원산지</div>
-                <div className="BasketCategoryPrice">가격</div>
-                <div className="BasketCategoryCount">개수</div>
-                <div className="BasketCategoryAllPrice">총액</div></div>
                     {Object.entries(menuCounts).map(([menu,count]) => (
                         <div className="BasketItemAll">
-                        <div key={menu} className="BasketMenu">
+                        <div className="BasketImage"> <img src={process.env.PUBLIC_URL + `/item${menuNum[menu]}${id[menu]}.jpg`} width = '170px' height='170px'className="HeaderLogo" />
+                        </div>
+                        <div className="BasketRight1">
                           <div className="BasketName" >{menuNames[menu]}</div>
-                          <div className="BasketOrigin">{origin[menu]}</div>
-                            <div className="BasketPrice">{price[menu]}원 </div>
-                            <div className="BasketCount">{count}개</div>
-                            <div className="BasketAllPrice">{price[menu]*count}원</div>
+                            <div className="BasketCount">구매개수:{count}개</div>
+                            <div className="BasketRight2">
+                            <div className="BasketAllPrice">총액:{price[menu]*count}원</div>
+                            <ShopButton className="BasketButton" text="구매하기"/></div>
                         </div>  </div>
                     ))}
                 </div>
