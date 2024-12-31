@@ -8,6 +8,7 @@ import ShopBasket from './pages/ShopBasket';
 import ItemDetail from './pages/ItemDetail';
 import Note from './pages/note/Note';
 import NoteList from './pages/note/NoteList';
+import MyPage from './pages/MyPage';
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
  <Route path='/item/:id' element={<ItemDetail/>}/>
  <Route path='/note/list' element={<NoteList/>}/>
  <Route path='/note/:id' element={<Note/>}/>
+ <Route path='/mypage' element={<MyPage/>}/>
  </Routes>
   
    </div>
