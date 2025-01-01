@@ -9,7 +9,8 @@ const Join=()=>{
         id:"",
         pwd:"",
         name:"",
-        tel:""
+        tel:"",
+        address:""
     })
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -24,6 +25,7 @@ const Join=()=>{
             pwd:data.pwd,
             name:data.name,
             tel:data.tel,
+            address:data.address,
             is_admin:1
         })
         .then(response => {        
@@ -50,6 +52,8 @@ return(
    <div className="NameAll"><div className="NameText">이름</div><input className="NameInput" onChange={handleChange} name="name" value={data.name}>
    </input></div> 
    <div className="TelAll"><div className="TelText">전화번호</div><input className="TelInput" onChange={handleChange} name="tel" value={data.tel}>
+   </input></div> 
+   <div className="AddressAll"><div className="AddressText">주소</div><input className="AddressInput" onChange={handleChange} name="address" value={data.address}>
    </input></div> 
    <ShopButton className="JoinButton" text="완료" onClick={handleSubmit} />
    </div>
