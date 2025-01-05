@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ShopHeader from "../components/ShopHeader";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import ShopFooter from "../components/ShopFooter";
 
 
 const Home=()=>{

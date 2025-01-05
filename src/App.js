@@ -10,6 +10,7 @@ import Note from './pages/note/Note';
 import NoteList from './pages/note/NoteList';
 import MyPage from './pages/MyPage/MyPage';
 import MyPageEdit from './pages/MyPage/MyPageEdit';
+import ShopFooter from './components/ShopFooter';
 function App() {
   return (
     <BrowserRouter>
@@ -27,7 +28,7 @@ function App() {
  <Route path='/mypage' element={<MyPage/>}/>
  <Route path='/mypage/edit' element={<MyPageEdit/>}/>
  </Routes>
-  
+  <ShopFooter/>
    </div>
    </BrowserRouter>
   );
