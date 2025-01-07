@@ -11,6 +11,7 @@ import NoteList from './pages/note/NoteList';
 import MyPage from './pages/MyPage/MyPage';
 import MyPageEdit from './pages/MyPage/MyPageEdit';
 import ShopFooter from './components/ShopFooter';
+import Favorites from './pages/Favorites';
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
  <Route path='/note/list' element={<NoteList/>}/>
  <Route path='/note/:id' element={<Note/>}/>
  <Route path='/mypage' element={<MyPage/>}/>
+ <Route path='/favorites' element={<Favorites/>}/>
  <Route path='/mypage/edit' element={<MyPageEdit/>}/>
  </Routes>
   <ShopFooter/>

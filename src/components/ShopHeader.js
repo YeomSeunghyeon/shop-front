@@ -87,6 +87,7 @@ const ShopHeader=()=>{
 
      <div className="ShopHeader">
       <Link to="/note/list" className="HeaderNote">공지사항</Link>
+        <Link to="/favorites" className="HeaderFavorites">즐겨찾기</Link>
         <Link to="/shopbasket" className="HeaderItem">장바구니</Link>
         {islogin==false?
         <Link to="/login" className="HeaderLogin">로그인</Link>:
