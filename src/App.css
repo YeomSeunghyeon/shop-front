@@ -93,10 +93,10 @@ color:red;
 }
 /* footer */
 .FooterAll{
- margin-top: 20%;
+ margin-top: 25%;
  border-top: 0px solid black;
  background-color: rgb(198, 195, 195);
- height: 10em;
+ height: 8em;
  display: flex;
  flex-direction: column;
  justify-content: flex-end;
@@ -512,4 +512,29 @@ margin-bottom: 5%;
 .MyPageEditId{
   background-color: gray;
   color: white;
+}
+/*  favorite  */
+.FavoriteText{
+  margin-top: 3%;
+  margin-left:20%;
+  font-size: 30px;
+  font-weight: 800;
+}
+.FavoriteAll{
+  margin-top: 5%;
+  margin-left:20%;
+  display: flex;
+}
+.FavoriteItem{
+  border:1px solid black;
+  margin-right: 10%;
+}
+.FavoriteImg{
+
+}
+.FavoriteName{
+   font-size: 20px;
+   font-weight: 800;
+   display: flex;
+ justify-content: center;
 }

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import ShopHeader from "../components/ShopHeader";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Favorites=()=>{
     const session=sessionStorage.getItem("session");
     const [data,setData]=useState([]);
+    const navigate=useNavigate();
     useEffect(()=>{
         fetchData();
       },[])
@@ -21,20 +23,25 @@ const Favorites=()=>{
         }
         }
       }
+      const handleMove=(num)=>{
+        navigate(`/item/${num}`)
+      }
 return(
     <div>
         <ShopHeader/>
         <div>
+          <div className="FavoriteText">즐겨찾기</div>
+          <div className="FavoriteAll">
           {data&&data.map((it)=>{
             return(
-              <div>
-              <div className="BasketImage"> <img src={process.env.PUBLIC_URL + `/item${it.menu}${it.num}.jpg`} width = '170px' height='170px'className="HeaderLogo" />
+              <div className="FavoriteItem" onClick={()=>handleMove(it.num)}>
+              <div className="FavoriteImage"> <img src={process.env.PUBLIC_URL + `/item${it.menu}${it.num}.jpg`} width = '170px' height='170px'className="HeaderLogo" />
               </div>
-              <div>{it.name}</div>
+              <div className="FavoriteName">{it.name}</div>
               </div>
             )
           })}
-        </div>
+        </div></div>
        
     </div>
 )
